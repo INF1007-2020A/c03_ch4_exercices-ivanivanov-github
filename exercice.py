@@ -25,7 +25,14 @@ def get_nb_char(string: str, char: str) -> int:
 
 
 def get_nb_words(sentence: str) -> int:
-    return 0
+    a=0
+    n=0
+    space = " "
+    for i in sentence:
+        if sentence[a]==space:
+            n+=1
+        a+=1
+    return n+1
 
 
 def main() -> None:
