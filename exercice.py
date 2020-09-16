@@ -15,7 +15,13 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_nb_char(string: str, char: str) -> int:
-    return 0
+    n=0
+    a=0
+    for i in string:
+        if string[a]==char:
+            n+=1
+        a+=1
+    return n
 
 
 def get_nb_words(sentence: str) -> int:
